@@ -5,6 +5,7 @@ import About from './routes/About';
 import Navigation from './components/Navigation';
 
 import './App.css';
+import Detail from './components/Detail';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navigation />
             <Route path="/" exact={true} component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/movie-detail" component={Detail} />
         </BrowserRouter>
     );
 }
